@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diksha</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="profile.jpg" type="image/x-icon">
+  <style>
+    .navbar-custom {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+    .navbar-custom .navbar-brand img {
+      height: 40px; /* Adjust size as needed */
+    }
+    .footer-custom {
+        background-color: #343a40;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .card-container {
+        display: flex;
+        justify-content: center; /* Centers the cards horizontally */
+        gap: 4rem; /* Adds space between cards */
+    }
+    .card {
+        width: 18rem;
+        border-radius: 10px; /* Adds rounded corners to the card */
+        margin-bottom: 30px;
+        margin-top: 10px;
+      }
+    .card-img-top {
+        border-radius: 10px; /* Adds rounded corners to the image */
+    }
+    .carousel {
+        max-width: 100%; /* Adjust size as needed */
+        margin: auto;
+        margin-bottom: 15px;
+
+    }
+    .carousel-inner img {
+        width: 100%; /* Ensures images are responsive */
+        border-radius: 10px; /* Adds rounded corners to the images */
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
+    <a class="navbar-brand" href="#">
+      <img src="profile.jpg" alt="Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Her</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="3000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="corousel1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h4>Welcome</h4>
+          <h5>This whole thing is made for mere phool Diksha</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="corosel2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Here You can see everything I know about her</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="corousel3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Go explore</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2 align="center">
+    My favourite pictures of her.
+  </h2>
+  <div class="card-container">
+    <div class="card">
+      <img src="fav1.jpg" class="card-img-top" alt="...">
+    </div>
+    <div class="card">
+      <img src="fav2.jpg" class="card-img-top" alt="...">
+    </div>
+    <div class="card">
+      <img src="fav3.jpg" class="card-img-top" alt="...">
+    </div>
+  </div>
+
+  <h2 align="center" style="margin: 10px;">for information about her <h3 class="btn btn-primary" style="margin-left: 46%;"><a href="about.html" style="color: white;">Click here</a></h3></h2>
+
+  <footer class="footer-custom">
+    <div class="container">
+      <p>The End</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
