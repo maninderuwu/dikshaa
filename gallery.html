@@ -18,6 +18,14 @@
       text-align: center;
       padding: 20px 0;
     }
+    #singleImageCarousel {
+      height: 630px; /* Fixed height for carousel */
+      overflow: hidden; /* Ensures no overflow beyond the defined height */
+    }
+    .carousel-inner img {
+      height: 100%; /* Makes image fit the container height */
+      object-fit: cover; /* Ensures the image covers the container without stretching */
+    }
     .card-container {
       display: flex;
       flex-wrap: wrap;
@@ -26,16 +34,26 @@
       margin-top: 20px;
     }
     .card {
-      width: 17rem;
+      width: calc(33.33% - 1rem); /* Three cards per row by default */
       border-radius: 10px; /* Adds rounded corners to the card */
       transition: opacity 1s ease-in-out; /* Smooth transition for opacity */
       opacity: 0.5; /* Faded out by default */
     }
     .card.fade-in {
-      opacity: 5; /* Fully visible when in view */
+      opacity: 1; /* Fully visible when in view */
     }
     .card-img-top {
       border-radius: 10px; /* Adds rounded corners to the image */
+    }
+    @media (max-width: 768px) {
+      .card {
+        width: calc(50% - 1rem); /* Two cards per row for tablet and below */
+      }
+    }
+    @media (max-width: 576px) {
+      .card {
+        width: calc(50% - 0.5rem); /* Two cards per row for phone */
+      }
     }
   </style>
 </head>
@@ -66,17 +84,16 @@
     </div>
   </nav>
 
-
   <div id="singleImageCarousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="about.jpg" class="d-block w-100" alt="..." style:'height:630px;'>
+        <img src="about.jpg" class="d-block w-100" alt="...">
       </div>
     </div>
   </div>
 
   <h2 align="center" style="margin-top: 70px;">
-    My favourite pictures of her.
+  Pictures of her.
   </h2>
   <div class="card-container">
     <div class="card">
@@ -123,6 +140,9 @@
     </div>
     <div class="card">
       <img src="g15.jpg" class="card-img-top" alt="...">
+    </div>
+    <div class="card">
+      <img src="g16.jpg" class="card-img-top" alt="...">
     </div>
     <div class="card">
       <img src="g17.jpg" class="card-img-top" alt="...">
@@ -205,7 +225,6 @@
     <div class="card">
       <img src="g43.jpg" class="card-img-top" alt="...">
     </div>
-    
   </div>
 
   <footer class="footer-custom">
